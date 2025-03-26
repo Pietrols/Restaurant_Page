@@ -1,3 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: bisque;
+  background-color: #fceff2;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative; /* Keeps the navbar at the top */
+}
+
+#title {
+  color: rgb(221, 214, 214);
+  font-size: 1.8rem;
+}
+
+#buttons {
+  display: flex;
+  height: 30px;
+  gap: 10px;
+}
+
+#buttons button {
+  border: none;
+  color: rgb(221, 214, 214);
+  background-color: #333;
+  /* font-weight: 700; */
+  font-size: 1.1rem;
+}
+
+/* Content Section */
+#content {
+  display: flex;
+  flex-direction: row; /* Stack elements horizontally */
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fceff2; /* Soft pink background */
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  max-width: 600px;
+  text-align: center;
+  color: #333;
+  flex: 1; /* Takes up equal space with the image */
+}
+
+#welcome-header {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #d72638;
+}
+
+#welcome-body {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+#welcome-body p {
+  margin-bottom: 15px;
+}
+
+/* Image Styling */
+#image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  flex: 1; /* Takes up equal space with the text */
 }
